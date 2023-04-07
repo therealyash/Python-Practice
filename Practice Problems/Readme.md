@@ -108,4 +108,91 @@ Reverse number is: 7654
 The reverse is false.
 ```
 
+#### 6. Write a program that will tell whether the number entered by user is odd or even
+```
+num = int(input('Enter a number: '))
+res = 'Even' if num % 2 == 0 else 'Odd'
+print(res)
+Enter a number: 25
+
+Odd
+``
+
+#### 7. Write a program to check whether the given year is a leap year or not.
+```
+year = int(input('Enter an year: '))
+# year evenly divisible by 4
+# year not evenly divisible by 4
+if year % 4 == 0:
+    if year % 100 != 0:
+        print('Leap Year!')
+    else:
+        print('Not a Leap Year!')
+else:
+    print('Not a Leap Year!')
+    
+Enter an year: 2024
+Leap Year!
+```
+
+#### 8. Write a program to calculate Euclidean distance between 2 coordinates.
+```
+import math
+print('Calculate Euclidean Distance between 2 Coordinates.')
+x1 = int(input('Enter x1: '))
+x2 = int(input('Enter x2: '))
+y1 = int(input('Enter y1: '))
+y2 = int(input('Enter y2: '))
+
+d = round(math.sqrt (((x2-x1)**2) + ((y2-y1)**2)),2)
+print('Euclidean Distance:', d)
+
+Calculate Euclidean Distance between 2 Coordinates.
+Enter x1: 2
+Enter x2: 5
+Enter y1: 4
+Enter y2: 7
+Euclidean Distance: 4.24
+```
+
+#### 9. Write a program that takes a user input of 3 angles and will find out whether it can form a triangle or not.
+```
+print('Triangle Check Program')
+sum_ang = 0
+for i in range(1,4):
+    ang = round(float(input("Enter angle {}: ".format(i))))
+    sum_ang = sum_ang + ang
+if sum_ang == 180:
+    print('Triangle Can be Formed!')
+else:
+    print('Triangle Cannot be Formed!')
+
+Triangle Check Program
+Enter angle 1: 60
+Enter angle 2: 60
+Enter angle 3: 60
+Triangle Can be Formed!
+```
+
+#### 10. Write a program that take user input of cost price and selling price and determine whether it's a loss or a profit.
+```
+print('Profit or Loss!')
+cost = float(input('Enter Cost Price: '))
+sell = float(input('Enter Selling Price: '))
+if (sell-cost) > 0:
+    print('Profit!')
+elif (sell - cost) == 0:
+    print('No Profit No Loss!')
+else:
+    print('Loss!')
+    
+Profit or Loss!
+Enter Cost Price: 500
+Enter Selling Price: 900
+```
+
+
+
+
+
 
