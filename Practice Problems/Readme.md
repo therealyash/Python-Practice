@@ -191,7 +191,24 @@ Enter Cost Price: 500
 Enter Selling Price: 900
 ```
 
+#### 11. Write a program to find the simple interest when the value of principle rate of interest and time period is given.
+```
+print('Simple Interest Program!')
+p = float(input('Please enter the principal amount: '))
+r = round(float(input('Please enter annual interest rate: ')),2) * 0.01
+t = int(input('Please enter years: '))
 
+a = p*(1+(r*t))
+print('Total amount after {} years is {}'.format(t,a))
+print('Interest amount is {}'.format((a-p))
+
+Simple Interest Program!
+Please enter the principal amount: 1000
+Please enter annual interest rate: 12
+Please enter years: 5
+Total amount after 5 years is 1600.0
+Interest amount is 600.0
+```
 
 
 
